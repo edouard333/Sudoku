@@ -7,7 +7,7 @@ import java.util.Collections;
  *
  * @author Edouard Jeanjean
  */
-public class Sudoku {
+public class Main {
 
     /**
      * Vérifie que le sudoku respecte les règles.
