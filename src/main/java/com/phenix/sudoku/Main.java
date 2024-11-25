@@ -5,7 +5,7 @@ import java.util.Collections;
 
 /**
  *
- * @author Edouard Jeanjean
+ * @author <a href="mailto:edouard128@hotmail.com">Edouard Jeanjean</a>
  */
 public class Main {
 
@@ -120,7 +120,6 @@ public class Main {
      * @param sudoku
      */
     public static void complete1(int[][] sudoku) {
-
         for (int y = 0; y < sudoku.length; y++) {
             System.out.println("L" + y + " : " + nombreCaseVidePourLigne(sudoku, y));
 
@@ -150,7 +149,6 @@ public class Main {
                         break parcoure;
                     }
                 }
-
             }
         }
 
@@ -185,7 +183,6 @@ public class Main {
                 }
             }
         }
-
     }
 
     /**
@@ -199,11 +196,9 @@ public class Main {
         int zero = 0;
 
         for (int y = 0; y < sudoku.length; y++) {
-
             if (sudoku[y][index_colonne] == 0) {
                 zero++;
             }
-
         }
 
         return zero;
@@ -220,11 +215,9 @@ public class Main {
         int zero = 0;
 
         for (int x = 0; x < sudoku.length; x++) {
-
             if (sudoku[index_ligne][x] == 0) {
                 zero++;
             }
-
         }
 
         return zero;
@@ -237,7 +230,6 @@ public class Main {
      */
     public static void affiche(int[][] sudoku) {
         for (int y = 0; y < sudoku.length; y++) {
-
             if (y % 3 == 0) {
                 for (int x = 0; x < sudoku.length; x++) {
                     System.out.print("- ");
@@ -281,7 +273,6 @@ public class Main {
         affiche(sudoku);
 
         System.out.println("Sudoku complet : " + isComplete(sudoku));
-
         System.out.println("Sudoku valide : " + verifier(sudoku));
     }
 }
